@@ -10,7 +10,7 @@ export default defineConfig({
   reporter: [['html', { outputFolder: 'test-results/html', open: 'never' }]],
 
   use: {
-    headless: false,
+    headless: true, // forced headless in CI
     baseURL: 'https://www.saucedemo.com/',
     trace: 'retain-on-failure',
     video: 'retain-on-failure',
