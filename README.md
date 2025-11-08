@@ -50,28 +50,27 @@ The suite is designed with **business-critical flows** in mind:
 5. **Checkout Validation**
    - Verify required fields are enforced (First Name, Last Name, Postal Code).
 
-> The suite focuses on **high-priority, high-risk functionality**, emphasizing maintainability and reusability through **Page Object Model (POM)** and **data-driven testing**.
+
+The suite focuses on **high-priority, high-risk functionality**, emphasizing maintainability and reusability through **Page Object Model (POM)** and **data-driven testing**.
 
 ---
 
 ## Project Structure
 
 saucedemo-automation/
-├─ tests/ # Test files
-├─ locators/ # Page locators
-├─ pages/ # Page Objects
-├─ test-data/ # JSON test data
-├─ utils/ # BaseTest, Generic utilities
-├─ test-results/ # Test outputs (screenshots, HTML reports)
-├─ playwright.config.ts # Playwright configuration
-├─ package.json
+#### ├─ tests/ # Test files
+#### ├─ locators/ # Page locators
+#### ├─ pages/ # Page Objects
+#### ├─ test-data/ # JSON test data
+#### ├─ utils/ # BaseTest, Generic utilities
+#### ├─ test-results/ # Test outputs (screenshots, HTML reports)
+#### ├─ playwright.config.ts # Playwright configuration
+#### ├─ package.json
 
 
 ---
 
 ## Running Tests
-
-# Run all tests
 npm test
 
 ---
