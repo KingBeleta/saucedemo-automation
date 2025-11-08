@@ -1,0 +1,5 @@
+[
+  { "firstName": "Walter", "lastName": "White", "zipCode": "1234" },
+  { "firstName": "Jesse", "lastName": "Pinkman", "zipCode": "4321" },
+  { "firstName": "Saul", "lastName": "Goodman", "zipCode": "1423" }
+]
