@@ -47,9 +47,15 @@ jobs:
       - name: Install Playwright browsers
         run: npx playwright install --with-deps
 
-      # Run Playwright tests and generate HTML report
+      # Run Playwright tests and explicitly create the HTML report after
       - name: Run Playwright tests
-        run: npx playwright test --reporter=html
+        run: |
+          npx playwright test
+          npx playwright show-report test-results/html --output test-results/html || true
+
+      # Ensure directory exists (extra safety)
+      - name: Ensure report directory exists
+        run: mkdir -p test-results/html
 
       # Upload Playwright HTML Report
       - name: Upload Playwright HTML Report
@@ -57,4 +63,3 @@ jobs:
         with:
           name: playwright-report
           path: test-results/html/**
-
